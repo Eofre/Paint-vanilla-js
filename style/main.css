@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(18, 18, 18, 0.899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border: 3px solid rgba(240, 238, 238, 0.221);
+}
