@@ -1,10 +1,60 @@
+@import "reset.css";
+
 body {
   background-color: rgba(18, 18, 18, 0.899);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
-canvas {
-  border: 3px solid rgba(240, 238, 238, 0.221);
+button {
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+.canvas {
+  margin-top: 15px;
+  width: 900px;
+  height: 500px;
+
+  border-radius: 10px;
+  box-shadow: #000 0px 0px 15px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn {
+  padding: 5;
+  background-color: transparent;
+}
+
+.btn svg path {
+  fill: rgba(0, 0, 0, 0.559);
+}
+
+.btn + .btn {
+  margin-left: 5px;
+}
+.controls {
+  margin-top: 30px;
+}
+
+.controls__colors {
+  display: flex;
+}
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: #000 0px 0px 8px;
+  cursor: pointer;
 }

@@ -4,11 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Paint</title>
   </head>
   <body>
-    <canvas></canvas>
+    <div class="top">
+      <div class="btns">
+        <button id="jsMode" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path
+              d="M21.85 44q-1.2 0-2.1-.875-.9-.875-.9-2.125V31H11q-1.2 0-2.1-.9Q8 29.2 8 28V12.85q0-2.75 1.975-4.8T14.75 6H40v22q0 1.2-.9 2.1-.9.9-2.1.9h-7.85v10q0 1.25-.9 2.125t-2.1.875ZM11 20.3h26V9h-2.8v8.55h-3V9h-3.55v4.25h-3V9h-9.9q-1.6 0-2.675 1.15Q11 11.3 11 12.85Zm0 7.7h26v-4.7H11V28Zm0-4.7V28Z"
+            />
+          </svg>
+        </button>
+        <button id="jsSave" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path
+              d="M42 13.85V39q0 1.2-.9 2.1-.9.9-2.1.9H9q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h25.15Zm-3 1.35L32.8 9H9v30h30ZM24 35.75q2.15 0 3.675-1.525T29.2 30.55q0-2.15-1.525-3.675T24 25.35q-2.15 0-3.675 1.525T18.8 30.55q0 2.15 1.525 3.675T24 35.75ZM11.65 18.8h17.9v-7.15h-17.9ZM9 15.2V39 9Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <input
+        type="range"
+        class="top__range"
+        id="jsRange"
+        min="0.1"
+        max="5.0"
+        value="2.5"
+        step="0.1"
+      />
+    </div>
+
+    <canvas class="canvas" id="jsCanvas"></canvas>
+    <div class="controls">
+      <div class="controls__colors" id="jsColorls">
+        <div class="controls__color" style="background-color: #2c2c2c"></div>
+        <div class="controls__color" style="background-color: white"></div>
+        <div class="controls__color" style="background-color: red"></div>
+        <div class="controls__color" style="background-color: orange"></div>
+        <div
+          class="controls__color"
+          style="background-color: rgb(255, 255, 0)"
+        ></div>
+        <div class="controls__color" style="background-color: green"></div>
+        <div
+          class="controls__color"
+          style="background-color: rgb(0, 255, 255)"
+        ></div>
+        <div class="controls__color" style="background-color: blue"></div>
+        <div
+          class="controls__color"
+          style="background-color: rgb(234, 0, 255)"
+        ></div>
+      </div>
+    </div>
+
     <script src="./js//main.js"></script>
   </body>
 </html>
